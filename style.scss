@@ -448,6 +448,24 @@ footer {
     .bottom_comment {
       .bottom_comment_container {
         width: 85%;
+        .tag_list {
+          max-width: 25rem;
+          margin-top: 4rem;
+          a {
+            padding: 0 0.5rem;
+            display: inline-block;
+            height: 1.5rem;
+            background-color: #bc5756;
+            font-size: 0.8rem;
+            border-radius: 2px;
+            line-height: 1.5rem;
+            margin: 0.2rem 0.1rem;
+            &:hover {
+              background-color: #a62021;
+              text-decoration: none;
+            }
+          }
+        }
         .silver {
           width: 100%;
           height: 7vh;
@@ -512,26 +530,6 @@ footer {
               margin: 0 10px;
             }
           }
-        }
-      }
-    }
-  }
-  .innerLower {
-    padding: 2rem 0;
-    .tag_list {
-      max-width: 25rem;
-      a {
-        padding: 0 0.5rem;
-        display: inline-block;
-        height: 1.5rem;
-        background-color: #bc5756;
-        font-size: 0.8rem;
-        border-radius: 2px;
-        line-height: 1.5rem;
-        margin: 0.2rem 0.1rem;
-        &:hover {
-          background-color: #a62021;
-          text-decoration: none;
         }
       }
     }
@@ -870,17 +868,12 @@ article {
   }
   .slider {
     .slider_inner {
-      overflow: hidden;
       .slide {
-        display: flex;
-        width: 300%;
-        transform: translate3d(-33%, 0, 0);
-        ul {
-          display: flex;
-          justify-content: space-between;
-          li {
-            width: 32%;
+        .cards {
+          .card {
             box-shadow: 0 0 4px #ebebeb;
+            width: 200px;
+            margin: 5px;
             a {
               display: block;
               text-decoration: none;
@@ -1006,8 +999,15 @@ article {
               ol {
                 li {
                   line-height: 1.6em;
-                  padding: 0.7rem 0 0.7rem 1em;
-                  text-indent: -1.5em;
+                  padding: 0.5rem 0;
+                  display: flex;
+                  span {
+                    display: block;
+                    width: calc(100% - 1.2rem);
+                  }
+                  &:before {
+                    margin-top: 5px;
+                  }
                 }
               }
             }
@@ -1059,7 +1059,6 @@ article {
   }
   footer {
     .inner {
-      padding: 0 1rem;
       display: flex;
       flex-direction: column;
       .innerUpper {
@@ -1069,6 +1068,16 @@ article {
           margin-bottom: 5rem;
           .bottom_comment_container {
             width: 100%;
+            padding: 0 0 0 1rem;
+            p {
+              padding: 0 1rem 0 0;
+            }
+            .tag_list {
+              padding-right: 1rem;
+              a {
+                background-color: #9f201f;
+              }
+            }
             .download_btn {
               height: 8vh;
               a {
@@ -1079,6 +1088,7 @@ article {
         }
         .category_list {
           margin-bottom: 2rem;
+          padding: 1rem;
           ul {
             li {
               margin: 0;
@@ -1093,6 +1103,7 @@ article {
         }
         .archives_list {
           margin-bottom: 2rem;
+          padding: 1rem;
           ul {
             li {
               margin: 0;
@@ -1104,6 +1115,9 @@ article {
               }
             }
           }
+        }
+        .popularPosts_list {
+          padding: 1rem;
         }
       }
     }
