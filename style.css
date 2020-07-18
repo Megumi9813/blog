@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 div,
@@ -1050,6 +1051,12 @@ article .article_inner .related_tag ul li a {
           box-shadow: 0 0 4px #ebebeb;
   width: 200px;
   margin: 5px;
+}
+
+.related_post .slider .slider_inner .slide .cards .card button .slick_prev,
+.related_post .slider .slider_inner .slide .cards .card button .slick_nextå {
+  z-index: 1000;
+  right: 5px;
 }
 
 .related_post .slider .slider_inner .slide .cards .card a {
