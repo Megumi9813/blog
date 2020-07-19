@@ -874,13 +874,6 @@ article {
             box-shadow: 0 0 4px #ebebeb;
             width: 200px;
             margin: 5px;
-            button {
-              .slick_prev,
-              .slick_nextå {
-                z-index: 1000;
-                right: 5px;
-              }
-            }
             a {
               display: block;
               text-decoration: none;
@@ -930,6 +923,16 @@ article {
         }
       }
     }
+  }
+  .slick-prev {
+    left: 5px;
+    z-index: 1000;
+    top: 35%;
+  }
+  .slick-next {
+    right: 5px;
+    z-index: 1000;
+    top: 35%;
   }
 }
 //////////////////////Article.html_end////////////////////////////

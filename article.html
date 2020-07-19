@@ -188,12 +188,12 @@
                   <div class="card">
                     <a href="#"
                       ><div class="blog_img">
-                        <img src="imgs/blog10.jpg" />
-                        <div class="blog_tag">Agassaの特徴</div>
+                        <img src="imgs/blog5.jpg" />
+                        <div class="blog_tag">Agassaのデザイン</div>
                       </div>
                       <div class="blog_body">
                         <h3>
-                          重要記事を表示する「ピックアップ」でユーザビリティを最大限に高めよう！
+                          カラーを自由自在に変更できる！CSSがわからなくても使いこなせる！
                         </h3>
                         <p>1月 10, 2018</p>
                       </div></a
@@ -202,13 +202,12 @@
                   <div class="card">
                     <a href="#"
                       ><div class="blog_img">
-                        <img src="imgs/recommend.jpg" />
-                        <div class="blog_tag">Agassaの特徴</div>
+                        <img src="imgs/blog4.jpg" />
+                        <div class="blog_tag">Agassaのデザイン</div>
                       </div>
                       <div class="blog_body">
                         <h3>
-                          「Agassa（ジン）」の特徴 |
-                          アフェリエイトのノウハウが濃縮されたWordPressテー...
+                          使いやすい「スマホフッターメニュー」でユーザビリティを高めよう！
                         </h3>
                         <p>1月 10, 2018</p>
                       </div></a
@@ -217,55 +216,12 @@
                   <div class="card">
                     <a href="#"
                       ><div class="blog_img">
-                        <img src="imgs/blog8.jpg" />
-                        <div class="blog_tag">Agassaの特徴</div>
+                        <img src="imgs/blog7.jpg" />
+                        <div class="blog_tag">Agassaのエディタ</div>
                       </div>
                       <div class="blog_body">
                         <h3>
-                          Agassaは内部SEO対策済み！サイトの上位表示を後押しします
-                        </h3>
-                        <p>1月 10, 2018</p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="card">
-                    <a href="#"
-                      ><div class="blog_img">
-                        <img src="imgs/blog10.jpg" />
-                        <div class="blog_tag">Agassaの特徴</div>
-                      </div>
-                      <div class="blog_body">
-                        <h3>
-                          重要記事を表示する「ピックアップ」でユーザビリティを最大限に高めよう！
-                        </h3>
-                        <p>1月 10, 2018</p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="card">
-                    <a href="#"
-                      ><div class="blog_img">
-                        <img src="imgs/recommend.jpg" />
-                        <div class="blog_tag">Agassaの特徴</div>
-                      </div>
-                      <div class="blog_body">
-                        <h3>
-                          「Agassa（ジン）」の特徴 |
-                          アフェリエイトのノウハウが濃縮されたWordPressテー...
-                        </h3>
-                        <p>1月 10, 2018</p>
-                      </div></a
-                    >
-                  </div>
-                  <div class="card">
-                    <a href="#"
-                      ><div class="blog_img">
-                        <img src="imgs/blog8.jpg" />
-                        <div class="blog_tag">Agassaの特徴</div>
-                      </div>
-                      <div class="blog_body">
-                        <h3>
-                          Agassaは内部SEO対策済み！サイトの上位表示を後押しします
+                          会話のための「吹き出し」を標準搭載！デザインバリエーションは30種類以上！
                         </h3>
                         <p>1月 10, 2018</p>
                       </div></a
@@ -309,6 +265,48 @@
                       <div class="blog_body">
                         <h3>
                           Agassaは内部SEO対策済み！サイトの上位表示を後押しします
+                        </h3>
+                        <p>1月 10, 2018</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="#"
+                      ><div class="blog_img">
+                        <img src="imgs/blog9.jpg" />
+                        <div class="blog_tag">収益化機能</div>
+                      </div>
+                      <div class="blog_body">
+                        <h3>
+                          Google Analyticsなどを簡単に導入できる「HTMLタグ設定」
+                        </h3>
+                        <p>1月 10, 2018</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="#"
+                      ><div class="blog_img">
+                        <img src="imgs/blog11.jpg" />
+                        <div class="blog_tag">Agassaの特徴</div>
+                      </div>
+                      <div class="blog_body">
+                        <h3>
+                          「広告管理」で管理画面から広告一元管理！収益性と効率をアップしよう！
+                        </h3>
+                        <p>1月 10, 2018</p>
+                      </div></a
+                    >
+                  </div>
+                  <div class="card">
+                    <a href="#"
+                      ><div class="blog_img">
+                        <img src="imgs/blog12.jpg" />
+                        <div class="blog_tag">Agassaの特徴</div>
+                      </div>
+                      <div class="blog_body">
+                        <h3>
+                          CTA（（注目エリア）を設置して収益アップ！カテゴリ分けにも対応！
                         </h3>
                         <p>1月 10, 2018</p>
                       </div></a
@@ -637,12 +635,14 @@
         );
         return false;
       });
-      $(".cards").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      });
+      if (window.matchMedia("(min-width: 680px)").matches) {
+        $(".cards").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        });
+      }
     });
   </script>
   <body></body>

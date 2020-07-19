@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body,
 div,
@@ -1053,12 +1052,6 @@ article .article_inner .related_tag ul li a {
   margin: 5px;
 }
 
-.related_post .slider .slider_inner .slide .cards .card button .slick_prev,
-.related_post .slider .slider_inner .slide .cards .card button .slick_nextå {
-  z-index: 1000;
-  right: 5px;
-}
-
 .related_post .slider .slider_inner .slide .cards .card a {
   display: block;
   text-decoration: none;
@@ -1119,6 +1112,18 @@ article .article_inner .related_tag ul li a {
   color: #a1a1a1;
   margin: 0 0 0 auto;
   font-size: 0.6rem;
+}
+
+.related_post .slick-prev {
+  left: 5px;
+  z-index: 1000;
+  top: 35%;
+}
+
+.related_post .slick-next {
+  right: 5px;
+  z-index: 1000;
+  top: 35%;
 }
 
 @media screen and (max-width: 680px) {
