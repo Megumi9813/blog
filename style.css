@@ -1115,15 +1115,23 @@ article .article_inner .related_tag ul li a {
 }
 
 .related_post .slick-prev {
-  left: 5px;
+  left: 10px;
   z-index: 1000;
   top: 35%;
 }
 
 .related_post .slick-next {
-  right: 5px;
+  right: 10px;
   z-index: 1000;
   top: 35%;
+}
+
+.related_post .slick-dots li {
+  margin: 0;
+}
+
+.related_post .slick-dots .slick-active button:before {
+  color: #a62021;
 }
 
 @media screen and (max-width: 680px) {

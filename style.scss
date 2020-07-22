@@ -925,14 +925,26 @@ article {
     }
   }
   .slick-prev {
-    left: 5px;
+    left: 10px;
     z-index: 1000;
     top: 35%;
   }
   .slick-next {
-    right: 5px;
+    right: 10px;
     z-index: 1000;
     top: 35%;
+  }
+  .slick-dots {
+    li {
+      margin: 0;
+    }
+    .slick-active {
+      button {
+        &:before {
+          color: #a62021;
+        }
+      }
+    }
   }
 }
 //////////////////////Article.html_end////////////////////////////
